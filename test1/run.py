@@ -1,11 +1,10 @@
 import os
 import unittest
 
-
-case_path = os.path.join(os.getcwd(), 'case')
-report_path = os.path.join(os.getcwd(), 'report')
+# report_path = os.path.join(os.getcwd(), 'report')
 
 def case_l():
+    case_path = os.path.join(os.getcwd(), 'case')
     case = unittest.defaultTestLoader.discover(case_path)
     return case
 
